@@ -160,7 +160,7 @@ class FilterPlugin(BaseAdminPlugin):
                 new_lookup_parames = dict()
                 for k, v in lookup_params.iteritems():
                     list_v = v.split(',')
-                    if len(list_v) > 0:
+                    if len(list_v) > 1:
                         new_lookup_parames.update({k: list_v})
                     else:
                         new_lookup_parames.update({k: v})
